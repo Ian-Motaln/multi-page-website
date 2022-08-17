@@ -1,0 +1,131 @@
+
+li a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+ li a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+ li a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  ul { 
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 1cm;
+}
+footer {
+    background-color: black;
+    color: white; 
+  padding: 50px;
+  margin: 10px;
+}
+.splash_screen {
+    background-image: url(images/Apple-logo.webp);
+    height: 100vh;
+    color: white;
+}
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+#NewestMacbook{
+    Width: 100%;   
+}
+#macbook {
+    width: 100%;
+}
+#macbookAndImac {
+    width: 100%;
+}
+.Team_members {
+    margin: 10px;
+}
+#team {
+    padding: 0%;
+}
+.Heading-3 {
+    text-align: center;
+}
+img {
+    display: flex; flex-wrap: wrap; padding: 0 4px;
+flex: 50%; padding: 0 4px;
+margin-top: 8px; vertical-align: middle;
+}
+.team_members {
+    font-style: italic;
+    font-size: 10px;
+    color: blue;
+    text-decoration: none;
+}
+.Wayne_question {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 19px;
+}
+.Wayne_answer {
+    background-color: aqua;
+}
+
+.hamburger {
+    display:none;
+}
+@media all and (max-width: 800px){
+
+    nav{
+        display:none;   
+    }
+    .hamburger {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .hamburger-content {
+        display: none;
+        position: absolute;
+        left:0;
+        z-index:1;
+        background-color: gray;
+      }
+      
+      .hamburger:hover .hamburger-content {
+        display: block;
+      /* animation: popup .5s ease-in-out both; */
+      }
+      
+      .hamburger span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+      }
+      
+      .hamburger:hover span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+      
+      /*  @keyframes popup {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }  */
+
+}
